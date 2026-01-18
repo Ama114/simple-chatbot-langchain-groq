@@ -19,26 +19,26 @@ A simple yet powerful AI chatbot built using **Python**, **LangChain**, and **Gr
 
 Here is the logical flow of the project:
 
-**Step 1: Installation 📦**
-First, we install the necessary libraries (`langchain` and `langchain_groq`) to communicate with the AI model.
+####  Step 1: Installation 📦
+    First, we install the necessary libraries (`langchain` and `langchain_groq`) to communicate with the AI model.
 
-**Step 2: Initialize the "Brain" 🧠**
-We set up the **Groq API** key and initialize the `ChatGroq` model (Llama 3). This gives our chatbot the intelligence to understand and generate text.
+#### Step 2: Initialize the "Brain" 🧠
+    We set up the **Groq API** key and initialize the `ChatGroq` model (Llama 3). This gives our chatbot the intelligence to understand and generate text.
 
-**Step 3: Create Prompt Templates 📝**
-We define **Prompts** to guide the AI.
-* *System Message:* Tells the AI how to behave (e.g., "You are a helpful assistant").
-* *User Message:* The actual question asked by the user.
+#### Step 3: Create Prompt Templates 📝
+    We define **Prompts** to guide the AI.
+    * *System Message:* Tells the AI how to behave (e.g., "You are a helpful assistant").
+    * *User Message:* The actual question asked by the user.
 
-**Step 4: Build the Chain 🔗**
+#### Step 4: Build the Chain 🔗**
 We use LangChain to connect the components:
-`Prompt` -> `LLM (Model)` -> `Output Parser` (to get clean text).
+    `Prompt` -> `LLM (Model)` -> `Output Parser` (to get clean text).
 
-**Step 5: Add Memory (Context) 📂**
+#### Step 5: Add Memory (Context) 📂
 A standard chatbot forgets everything after one question. To fix this, we created a **History List**.
-1.  We save the User's question.
-2.  We save the AI's answer.
-3.  We send the *entire history* back to the model with the next question so it remembers who you are!
+    1.  We save the User's question.
+    2.  We save the AI's answer.
+    3.  We send the *entire history* back to the model with the next question so it remembers who you are!
 
 ## 📋 Prerequisites
 
